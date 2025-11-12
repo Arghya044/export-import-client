@@ -9,6 +9,7 @@ import Forgetpass from "../pages/Auth/Forgetpass";
 import AddExport from "../pages/Exports/AddExport";
 import MyExports from "../pages/Exports/MyExports";
 import MyImports from "../pages/Imports/MyImports";
+import NotFound from "../pages/NotFound";
 import PrivateRoute from "../components/PrivateRoute";
 
 export default function AppRoutes() {
@@ -24,7 +25,7 @@ export default function AppRoutes() {
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
         <Route path="forget-password" element={<Forgetpass />} />
-        <Route path="*" element={<div className='min-h-[50vh] grid place-items-center text-center'><div><h2 className='text-2xl font-semibold'>Page Not Found</h2><a className='btn btn-primary mt-4' href='/'>Go Home</a></div></div>} />
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   );
