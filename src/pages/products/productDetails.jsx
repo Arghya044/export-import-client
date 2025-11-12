@@ -1,7 +1,9 @@
 import { useContext, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
+import { API_BASE, getImageFallback } from "../../lib/api";
 import ImportModal from "../../components/ImportModal";
+import { AuthContext } from "../../contex/AuthContext";
 import toast from "react-hot-toast";
 import { Helmet } from "react-helmet-async";
 
