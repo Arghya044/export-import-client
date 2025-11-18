@@ -18,8 +18,6 @@
 ---
 
 ## 🚀 Main Technologies
-
-<table>
   <tr>
     <td align="center" width="150">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="50" height="50" alt="React"/>
@@ -286,15 +284,5 @@ firebase deploy
 
 
 
----
 
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
----
-
-
-
----
 
