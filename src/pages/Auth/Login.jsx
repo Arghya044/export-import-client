@@ -38,6 +38,12 @@ export default function Login() {
     }
   };
 
+  const fillDemoCredentials = () => {
+    setEmail("demo@example.com");
+    setPassword("Demo123");
+    toast.success("Demo credentials filled! Click Sign In to continue.");
+  };
+
   return (
     <div className="min-h-[calc(100vh-200px)] flex items-center justify-center py-12 px-4">
       <Helmet><title>Login • Import Export Hub</title></Helmet>
@@ -117,6 +123,18 @@ export default function Login() {
               </button>
             </form>
 
+            {/* Demo User Button */}
+            <button
+              onClick={fillDemoCredentials}
+              className="btn btn-outline btn-secondary w-full mt-3"
+              type="button"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+              </svg>
+              Use Demo Account
+            </button>
+
             <div className="divider my-6">OR</div>
 
             <button
@@ -124,10 +142,10 @@ export default function Login() {
               className="btn btn-outline w-full flex items-center justify-center gap-3"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 48 48">
-                <path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 31.9 29.2 35 24 35c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l5.7-5.7C34.2 3.1 29.3 1 24 1 11.8 1 2 10.8 2 23s9.8 22 22 22 22-9.8 22-22c0-1.5-.2-3-.4-4.5z"/>
-                <path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 16.1 18.9 13 24 13c3.1 0 5.9 1.1 8.1 2.9l5.7-5.7C34.2 3.1 29.3 1 24 1 16 1 9.1 5.4 6.3 14.7z"/>
-                <path fill="#4CAF50" d="M24 45c5.2 0 10-2 13.5-5.3l-6.2-5.1C29.2 35 24 35 24 35c-5.2 0-9.7-3.1-11.3-7.5l-6.6 5.1C9.1 40.6 16 45 24 45z"/>
-                <path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-1.3 3.9-5.8 7-11.3 7 0 0 0 0 0 0 5.2 0 10-2 13.5-5.3l-6.2-5.1C29.2 35 24 35 24 35c5.2 0 9.7-3.1 11.3-7.5.4-1.1.7-2.3.7-3.5 0-1.3-.2-2.5-.4-3.5z"/>
+                <path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 31.9 29.2 35 24 35c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l5.7-5.7C34.2 3.1 29.3 1 24 1 11.8 1 2 10.8 2 23s9.8 22 22 22 22-9.8 22-22c0-1.5-.2-3-.4-4.5z" />
+                <path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 16.1 18.9 13 24 13c3.1 0 5.9 1.1 8.1 2.9l5.7-5.7C34.2 3.1 29.3 1 24 1 16 1 9.1 5.4 6.3 14.7z" />
+                <path fill="#4CAF50" d="M24 45c5.2 0 10-2 13.5-5.3l-6.2-5.1C29.2 35 24 35 24 35c-5.2 0-9.7-3.1-11.3-7.5l-6.6 5.1C9.1 40.6 16 45 24 45z" />
+                <path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-1.3 3.9-5.8 7-11.3 7 0 0 0 0 0 0 5.2 0 10-2 13.5-5.3l-6.2-5.1C29.2 35 24 35 24 35c5.2 0 9.7-3.1 11.3-7.5.4-1.1.7-2.3.7-3.5 0-1.3-.2-2.5-.4-3.5z" />
               </svg>
               Continue with Google
             </button>
@@ -144,3 +162,4 @@ export default function Login() {
     </div>
   );
 }
+
