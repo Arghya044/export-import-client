@@ -71,8 +71,8 @@ export default function Home() {
       <section className="grid gap-6 md:grid-cols-2">
         <div className="card bg-base-200">
           <div className="card-body">
-            <h3 className="card-title">Real-time Sync</h3>
-            <p>Your imports and exports stay in sync with the database instantly.</p>
+            <h3 className="card-title">Live Synchronization</h3>
+            <p>Your imports and exports are instantly updated to match the database in real time.</p>
           </div>
         </div>
         <div className="card bg-base-200">
@@ -87,22 +87,22 @@ export default function Home() {
         <div className="stats shadow">
           <div className="stat">
             <div className="text-blue-800">Products</div>
-            <div className="stat-value">Global</div>
-            <div className="text-blue-800">Browse curated catalog</div>
+            <div className="stat-value">Worldwide</div>
+            <div className="text-blue-800">Explore a handpicked collection</div>
           </div>
         </div>
         <div className="stats shadow">
           <div className="stat">
             <div className="text-blue-800">One-Click Import</div>
             <div className="stat-value">Fast</div>
-            <div className=" text-blue-800">Import with confidence</div>
+            <div className=" text-blue-800">Import securely and confidently</div>
           </div>
         </div>
         <div className="stats shadow">
           <div className="stat">
             <div className="text-blue-800">Exporters</div>
-            <div className="stat-value">Empowered</div>
-            <div className="text-blue-800">Manage your listings</div>
+            <div className="stat-value">Enabled</div>
+            <div className="text-blue-800">Control your product listings</div>
           </div>
         </div>
       </section>

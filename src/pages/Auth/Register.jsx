@@ -81,7 +81,7 @@ export default function Register() {
 
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text font-medium">Photo URL <span className="text-xs text-base-content/50">(Optional)</span></span>
+                  <span className="label-text font-medium">Photo URL </span>
                 </label>
                 <input
                   className="input input-bordered w-full focus:input-primary"

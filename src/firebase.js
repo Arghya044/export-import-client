@@ -1,3 +1,4 @@
+// Firebase web app config and initialization
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 

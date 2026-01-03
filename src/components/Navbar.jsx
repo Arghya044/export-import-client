@@ -11,13 +11,13 @@ export default function Navbar() {
     const root = document.documentElement;
     const body = document.body;
     
-    
+    // Set data-theme attribute
     root.setAttribute("data-theme", theme);
     
-   
+    // Set color scheme
     root.style.colorScheme = theme === "deepdark" ? "dark" : "light";
     
-    
+    // Force background color update
     if (theme === "deepdark") {
       body.style.backgroundColor = "rgb(17 17 17)";
       body.style.color = "rgb(255 255 255)";
@@ -26,10 +26,10 @@ export default function Navbar() {
       body.style.color = "rgb(30 64 175)";
     }
     
-    
+    // Save to localStorage
     localStorage.setItem("theme", theme);
     
-    
+    // Force a reflow
     void root.offsetHeight;
   }, [theme]);
 
